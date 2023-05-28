@@ -1,0 +1,102 @@
+:root {
+    --guinda: #770000;
+    --anaranjado: #C74A00;
+    --durazno: #DB904E;
+    --morado: #2E2137;
+    --oscuro: #111115;
+    --blanco: #FFFFFF;
+    --grisClaro: #DFE9F3;
+    --page-width: 120rem;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px; /*1rem = 10px*/
+    font-family: 'Inconsolata', monospace, Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+
+.logo {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--durazno);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 1000px;*/
+    border: 10px solid var(--guinda);
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+.font-logo {
+    font-size: 100pt;
+}
+
+.contenido_banner {
+    padding: 0;
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.landing-content {
+    height: 100vh;
+}
+
+.page-width {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem;
+}
+
+.image {
+    background: url(../img/arboles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+
+
+.top-landing {
+    color: var(--oscuro);
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+}
+
+.bottom-landing {
+    font-size: 20px;
+    color: var(--blanco);
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
