@@ -49,6 +49,10 @@ body {
     font-size: 100pt;
 }
 
+.font-enter {
+    font-size: 20pt;
+}
+
 .contenido_banner {
     padding: 0;
     display: flex;
@@ -56,7 +60,8 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 1;
+    flex-direction: column;
 }
 
 .landing-content {
@@ -76,18 +81,15 @@ body {
     background-position: center center;
   }
   
-
-
 .top-landing {
     color: var(--oscuro);
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
     width: 100%;
     top: 0;
-    left: 0;
     display: flex;
     justify-content: space-between;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .bottom-landing {
@@ -97,6 +99,19 @@ body {
     width: 100%;
     padding: 10px;
     text-align: center;
+    align-items: center;
     bottom: 0;
-    left: 0;
 }
+
+a:visited {
+    color: var(--blanco);
+}
+
+.link:hover > a {
+    display: inline;
+  }
+  
+  .link:active > a {
+    display: none;
+  }
+
